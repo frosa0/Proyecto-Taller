@@ -1,0 +1,106 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{left=2cm, right=2cm, top=2cm, bottom=2cm}
+
+\begin{document}
+
+\title{Proyecto de Taller de Sistemas Digitales}
+\author{}
+\date{}
+\maketitle
+
+\tableofcontents
+\newpage
+
+\section{Acta de constitución de Proyecto}
+
+\textbf{Visión general del proyecto}: Desarrollar un sistema de seguimiento solar que optimice la captación de energía, controlando la orientación del panel solar según la posición del sol y transmitiendo la información generada a través de una interfaz accesible.
+
+\textbf{Objetivos}: 
+\begin{itemize}
+    \item \textbf{General}: sistema de control de panel solar. Se propone como proyecto la creación de un sistema que rote siguiendo la trayectoria del sol, con el fin de obtener la mayor potencia instantánea posible. Este sistema busca mejorar la eficiencia en comparación con los paneles solares estáticos. Las medidas de potencia, y su horario de medición, van a ser almacenadas y transmitidas para luego ser visualizadas en una interfaz gráfica que incluirá gráficos adicionales y datos históricos de la eficiencia del panel.
+    \item \textbf{Particular}: se desarrollarán los siguientes apartados:
+    \begin{itemize}
+        \item Sistema de rotación
+        \item Manejo de energía del micro
+        \item Circuito de medición de potencia
+        \item Desarrollo de comunicación entre dispositivos
+        \item Creación de interfaz gráfica para móvil
+        \item Programación de sistema de control
+    \end{itemize}
+\end{itemize}
+
+\textbf{Especificaciones y Alcance}:
+\begin{itemize}
+    \item \textbf{Requisito funcional}: El sistema debe ser capaz de ajustar su posición adaptándose a los cambios de incidencia solar para obtener la máxima potencia posible. Deberá ser capaz de medir correctamente la potencia para luego transmitir esos datos vía Bluetooth a una interfaz gráfica accesible desde una aplicación de celular.
+    \item \textbf{No funcional}: el sistema debe ser eficiente energéticamente en comparación con un típico panel solar estático, donde la potencia adicional obtenida con este proyecto sea apreciable (rendimiento). El sistema debe ser robusto y capaz de operar durante largos periodos de tiempo sin fallas (seguridad y fiabilidad). La interfaz gráfica debe ser intuitiva para operarios tipo HMI (usabilidad). Debe sentar una base confiable para proyectos futuros de mayores dimensiones o escalado del proyecto.
+    \item \textbf{Alcance}: El proyecto abarcará desde el diseño y fabricación del hardware hasta el desarrollo de software. No se incluye producción en masa, solo un prototipo funcional y operativo.
+\end{itemize}
+
+\textbf{Entregables}: 
+Prototipo final ensamblado, código fuente del microcontrolador, interfaz gráfica, breve documentación de uso y resultados de pruebas obtenidos. Bitácora de desarrollo.
+
+\textbf{Calendario General}: 
+\begin{center}
+\textbf{SUBIR FOTO}
+\end{center}
+
+\textbf{Presupuesto estimado}:
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|l|l|c|}
+        \hline
+        Concepto & Modelo & Costo Estimado \\ 
+        \hline
+        Sensor de potencia & INA219 & \$6.294 \\
+        Panel solar & Luxen LN10P & \$22.499 \\
+        Motor paso a paso & 28byj-48 & \$6.757 \\
+        Servo & SG 36 & \$4.699 \\
+        Soporte pivote & Impresión 3D & --- \\
+        Microcontrolador & Arduino UNO & \$10.500 \\
+        Sistema de comunicación & ESP32 & \$9.500 \\
+        Foto resistores & LD05 (x4) & \$5.700 \\
+        RTC & DS1302 & \$4.900 \\
+        Batería & --- & --- \\
+        \hline
+        \textbf{Total Estimado} & & \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\section{Planificación y Gestión de Proyecto}
+
+\textbf{Ciclo de vida}: ciclo de vida híbrido. Semi-flexible. Implementación clara y particular. Los alcances del proyecto son especificados al inicio del mismo. No se espera hacer grandes ajustes, pero se espera adaptabilidad a los plazos.
+
+\textbf{Organización del equipo de trabajo}: implementación de tareas rotativas.
+
+\textbf{Desglose de actividades}:
+\begin{itemize}
+    \item Primera etapa de planificación: propósito, materiales, costos, cronograma, recopilación de información, división de tareas.
+    \item Segunda etapa de planificación: realización de planos y esquemas.
+    \item Obtención de insumos.
+    \item Desarrollo de software de etapa temprana.
+    \item Realización de maquetas y prototipos.
+    \item Acondicionamiento y etapa de pruebas.
+    \item Etapa alfa.
+    \item Puesta a punto y modificaciones finales.
+    \item Entrega del proyecto final.
+\end{itemize}
+
+\textbf{Adquisiciones}: 
+\begin{itemize}
+    \item Sensor de potencia
+    \item Panel solar
+    \item Servo o motores paso a paso
+    \item Soporte pivote
+    \item Microcontrolador Atmega
+    \item ESP32 (transmisor de datos)
+    \item Foto diodos
+    \item RTC
+\end{itemize}
+
+\end{document}
