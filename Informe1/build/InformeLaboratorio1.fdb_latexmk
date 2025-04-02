@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1743547812.66847 "d:/ing/5 año/taller de sistemas digitales/Proyecto-Taller/Informe1/InformeLaboratorio1.tex" "build/InformeLaboratorio1.pdf" "InformeLaboratorio1" 1743547814.06171 0
+["pdflatex"] 1743634947.74459 "d:/ing/5 año/taller de sistemas digitales/Proyecto-Taller/Informe1/InformeLaboratorio1.tex" "build/InformeLaboratorio1.pdf" "InformeLaboratorio1" 1743634949.35396 0
   "C:/Users/faust/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1743547515 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/faust/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1743547518 14064 d7221a9e8e17aa77aa9607bd135c194c ""
   "C:/Users/faust/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1737916575 12013393 527ca6645762389e28c485c0ded348b6 ""
@@ -62,11 +62,12 @@
   "C:/Users/faust/AppData/Local/Programs/MiKTeX/tex/latex/refcount/refcount.sty" 1576433952 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "C:/Users/faust/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1657800696 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "C:/Users/faust/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "InformeLaboratorio1.tex" 1743547810 5110 542343946ff946755015a2840d0425c8 ""
-  "build/InformeLaboratorio1.aux" 1743547813 426 87ab920cc8d7f4aa4d4f63d26e73734c "pdflatex"
-  "build/InformeLaboratorio1.out" 1743547813 454 ee02d598823537f8a61b3e7c1b40401b "pdflatex"
-  "build/InformeLaboratorio1.toc" 1743547813 182 ac38f52363e580120177217450690e31 "pdflatex"
-  "d:/ing/5 año/taller de sistemas digitales/Proyecto-Taller/Informe1/InformeLaboratorio1.tex" 1743547810 5110 542343946ff946755015a2840d0425c8 ""
+  "InformeLaboratorio1.tex" 1743634946 5975 2f1f93ddb7e055c0eab354cf5eb1e64d ""
+  "build/Gantt_2semana.png" 1743630998 49494 ec077b19d7b4bf44cbbc41ab94907e58 ""
+  "build/InformeLaboratorio1.aux" 1743634949 588 e2c95ee947e8e006632165301637794e "pdflatex"
+  "build/InformeLaboratorio1.out" 1743634949 454 ee02d598823537f8a61b3e7c1b40401b "pdflatex"
+  "build/InformeLaboratorio1.toc" 1743634949 182 ac38f52363e580120177217450690e31 "pdflatex"
+  "d:/ing/5 año/taller de sistemas digitales/Proyecto-Taller/Informe1/InformeLaboratorio1.tex" 1743634946 5975 2f1f93ddb7e055c0eab354cf5eb1e64d ""
   (generated)
   "build/InformeLaboratorio1.aux"
   "build/InformeLaboratorio1.log"

@@ -1,17 +1,38 @@
 \documentclass[a4paper,12pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
+\usepackage{graphics}
 \usepackage{hyperref}
 \usepackage{geometry}
+\graphicspath{ {build/} } 
 \geometry{left=2cm, right=2cm, top=2cm, bottom=2cm}
 
 \begin{document}
 
-\title{Proyecto de Taller de Sistemas Digitales}
-\author{}
-\date{}
-\maketitle
+\begin{titlepage}
+    \begin{center}
+        \vspace*{3cm}
+        
+        {\Huge \textbf{Laboratorio 1}}\\[1cm]
+        {\LARGE Grupo 7, Panel Solar}\\[2cm]
+        
+        \vfill
+        
+        {\Large \textbf{Integrantes}}\\[0.5cm]
+        \large
+        \begin{tabular}{c c}
+            Gartner, Francisco Nehuen & 69864/6 \\
+            Marchesotti, Guido Daniel & 69923/9 \\
+            Rosa, Fausto Pablo & 69843/1 \\
+        \end{tabular}
+        
+        \vfill
+        
+        {\large \today}
+    \end{center}
+\end{titlepage}
 
+\newpage
 \tableofcontents
 \newpage
 
@@ -43,64 +64,65 @@
 \textbf{Entregables}: 
 Prototipo final ensamblado, código fuente del microcontrolador, interfaz gráfica, breve documentación de uso y resultados de pruebas obtenidos. Bitácora de desarrollo.
 
-\textbf{Calendario General}: 
-\begin{center}
-\textbf{SUBIR FOTO}
-\end{center}
-
-\textbf{Presupuesto estimado}:
-
-\begin{table}[h]
-    \centering
-    \begin{tabular}{|l|l|c|}
-        \hline
-        Concepto & Modelo & Costo Estimado \\ 
-        \hline
-        Sensor de potencia & INA219 & \$6.294 \\
-        Panel solar & Luxen LN10P & \$22.499 \\
-        Motor paso a paso & 28byj-48 & \$6.757 \\
-        Servo & SG 36 & \$4.699 \\
-        Soporte pivote & Impresión 3D & --- \\
-        Microcontrolador & Arduino UNO & \$10.500 \\
-        Sistema de comunicación & ESP32 & \$9.500 \\
-        Foto resistores & LD05 (x4) & \$5.700 \\
-        RTC & DS1302 & \$4.900 \\
-        Batería & --- & --- \\
-        \hline
-        \textbf{Total Estimado} & & \\
-        \hline
-    \end{tabular}
-\end{table}
-
+\newpage
 \section{Planificación y Gestión de Proyecto}
 
-\textbf{Ciclo de vida}: ciclo de vida híbrido. Semi-flexible. Implementación clara y particular. Los alcances del proyecto son especificados al inicio del mismo. No se espera hacer grandes ajustes, pero se espera adaptabilidad a los plazos.
-
-\textbf{Organización del equipo de trabajo}: implementación de tareas rotativas.
-
-\textbf{Desglose de actividades}:
 \begin{itemize}
-    \item Primera etapa de planificación: propósito, materiales, costos, cronograma, recopilación de información, división de tareas.
-    \item Segunda etapa de planificación: realización de planos y esquemas.
-    \item Obtención de insumos.
-    \item Desarrollo de software de etapa temprana.
-    \item Realización de maquetas y prototipos.
-    \item Acondicionamiento y etapa de pruebas.
-    \item Etapa alfa.
-    \item Puesta a punto y modificaciones finales.
-    \item Entrega del proyecto final.
-\end{itemize}
+    \item \textbf{Ciclo de vida}: ciclo de vida híbrido. Semi-flexible. Implementación clara y particular. Los alcances del proyecto son especificados al inicio del mismo. No se espera hacer grandes ajustes, pero se espera adaptabilidad a los plazos.
+    \item \textbf{Organización del equipo de trabajo}: implementación de tareas rotativas.
+    \item \textbf{Desglose de actividades}:
+    \begin{itemize}
+        \item Primera etapa de planificación: propósito, materiales, costos, cronograma, recopilación de información, división de tareas.
+        \item Segunda etapa de planificación: realización de planos y esquemas.
+        \item Obtención de insumos.
+        \item Desarrollo de software de etapa temprana.
+        \item Realización de maquetas y prototipos.
+        \item Acondicionamiento y etapa de pruebas.
+        \item Etapa alfa.
+        \item Puesta a punto y modificaciones finales.
+        \item Entrega del proyecto final.
+    \end{itemize}
 
-\textbf{Adquisiciones}: 
-\begin{itemize}
-    \item Sensor de potencia
-    \item Panel solar
-    \item Servo o motores paso a paso
-    \item Soporte pivote
-    \item Microcontrolador Atmega
-    \item ESP32 (transmisor de datos)
-    \item Foto diodos
-    \item RTC
+    \begin{figure}[h!]
+        \makebox[0pt]{%
+        \includegraphics[width=0.9\paperwidth]{Gantt_2semana}}
+        \centering
+        \caption{Info \label{overflow}}
+    \end{figure}
+
+    \item \textbf{Adquisiciones}: 
+    \begin{itemize}
+        \item Sensor de potencia
+        \item Panel solar
+        \item Servo o motores paso a paso
+        \item Soporte pivote
+        \item Microcontrolador Atmega
+        \item ESP32 (transmisor de datos)
+        \item Foto diodos
+        \item RTC
+    \end{itemize}
+
+    \begin{table}[h!]
+        \centering
+        \begin{tabular}{|l|l|c|}
+            \hline
+            Concepto & Modelo & Costo Estimado \\ 
+            \hline
+            Sensor de potencia & INA219 & \$6.294 \\
+            Panel solar & Luxen LN10P & \$22.499 \\
+            Motor paso a paso & 28byj-48 & \$6.757 \\
+            Servo & SG 36 & \$4.699 \\
+            Soporte pivote & Impresión 3D & --- \\
+            Microcontrolador & Arduino UNO & \$10.500 \\
+            Sistema de comunicación & ESP32 & \$9.500 \\
+            Foto resistores & LD05 (x4) & \$5.700 \\
+            RTC & DS1302 & \$4.900 \\
+            Batería & --- & --- \\
+            \hline
+            \textbf{Total Estimado} & & \\
+            \hline
+        \end{tabular}
+    \end{table}
 \end{itemize}
 
 \end{document}
