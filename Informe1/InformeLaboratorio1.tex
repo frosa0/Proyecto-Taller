@@ -4,6 +4,7 @@
 \usepackage{graphics}
 \usepackage{hyperref}
 \usepackage{geometry}
+\usepackage{comment}
 \graphicspath{ {build/} } 
 \geometry{left=2cm, right=2cm, top=2cm, bottom=2cm}
 
@@ -13,12 +14,12 @@
     \begin{center}
         \vspace*{3cm}
         
-        {\Huge \textbf{Laboratorio 1}}\\[1cm]
-        {\LARGE Grupo 7, Panel Solar}\\[2cm]
+        {\Huge \textbf{Laboratorio 1 - Grupo 7}}\\[1cm]
+        {\LARGE Panel solar automático:\\ [0.5cm]Planificación y Gestión de Proyecto}\\[2cm]
         
         \vfill
         
-        {\Large \textbf{Integrantes}}\\[0.5cm]
+        {\Large \textbf{Integrantes }}\\[.5cm]
         \large
         \begin{tabular}{c c}
             Gartner, Francisco Nehuen & 69864/6 \\
@@ -26,19 +27,25 @@
             Rosa, Fausto Pablo & 69843/1 \\
         \end{tabular}
         
-        \vfill
+        \vspace{1cm}
         
-        {\large \today}
+        \begin{figure}[b]
+            \centering
+            \includegraphics[width=1\linewidth]{LOGOSFI-UNLP-color-01.png}
+        \end{figure}
+        
+        %%{\large \today}
     \end{center}
 \end{titlepage}
 
-\newpage
-\tableofcontents
-\newpage
+%%\newpage
+%%\tableofcontents
+%%\newpage
 
 \section{Acta de constitución de Proyecto}
 
-\textbf{Visión general del proyecto}: Desarrollar un sistema de seguimiento solar que optimice la captación de energía, controlando la orientación del panel solar según la posición del sol y transmitiendo la información generada a través de una interfaz accesible.
+\hspace{0.4cm}\textbf{ Visión general del proyecto}: 
+Desarrollar un sistema de seguimiento solar que optimice la captación de energía, controlando la orientación del panel solar según la posición del sol y transmitiendo la información generada a través de una interfaz gráfica.
 
 \textbf{Objetivos}: 
 \begin{itemize}
@@ -51,19 +58,26 @@
         \item Desarrollo de comunicación entre dispositivos
         \item Creación de interfaz gráfica para móvil
         \item Programación de sistema de control
+        \item Alimentación del sistema
+        
     \end{itemize}
+
+    
 \end{itemize}
 
 \textbf{Especificaciones y Alcance}:
 \begin{itemize}
-    \item \textbf{Requisito funcional}: El sistema debe ser capaz de ajustar su posición adaptándose a los cambios de incidencia solar para obtener la máxima potencia posible. Deberá ser capaz de medir correctamente la potencia para luego transmitir esos datos vía Bluetooth a una interfaz gráfica accesible desde una aplicación de celular.
-    \item \textbf{No funcional}: el sistema debe ser eficiente energéticamente en comparación con un típico panel solar estático, donde la potencia adicional obtenida con este proyecto sea apreciable (rendimiento). El sistema debe ser robusto y capaz de operar durante largos periodos de tiempo sin fallas (seguridad y fiabilidad). La interfaz gráfica debe ser intuitiva para operarios tipo HMI (usabilidad). Debe sentar una base confiable para proyectos futuros de mayores dimensiones o escalado del proyecto.
-    \item \textbf{Alcance}: El proyecto abarcará desde el diseño y fabricación del hardware hasta el desarrollo de software. No se incluye producción en masa, solo un prototipo funcional y operativo.
+    \item \textbf{Requisito funcional}: El sistema debe ser capaz de ajustar su posición adaptándose a los cambios de incidencia solar para obtener la máxima potencia posible. Deberá ser capaz de medir correctamente la potencia para luego transmitir esos datos vía Bluetooth a una interfaz gráfica accesible desde una aplicación de celular. El sistema debe ser eficiente energeticamente en comparación con un típico panel solar estático, donde la potencia adicional obtenida con este proyecto sea apreciable.Además, se espera que el sistema sea autosustentable, pudiendo generar mas energía que la que se consumirá en su totalidad.
+    \item \textbf{No funcional}: El sistema debe ser robusto y capaz de operar durante largos periodos de tiempo sin fallas. La interfaz gráfica debe ser intuitiva para operarios. Debe sentar una base confiable para proyectos futuros de mayores dimensiones o escalado del proyecto.
+    \item \textbf{Alcance}: Principalmente, el proyecto abarcará desde el diseño y fabricación del hardware hasta el desarrollo de software. De objetivo secundario, deberá contar con una batería que se cargue con el remanente de energía. No se incluye producción en masa, solo un prototipo funcional y operativo.
 \end{itemize}
 
 \textbf{Entregables}: 
-Prototipo final ensamblado, código fuente del microcontrolador, interfaz gráfica, breve documentación de uso y resultados de pruebas obtenidos. Bitácora de desarrollo.
+Prototipo final ensamblado, código fuente del microcontrolador, interfaz gráfica, breve documentación de uso, resultados de pruebas obtenidos y bitácora de desarrollo. \newline
 
+\textbf{Presupuesto estimado :} Considerando los precios de los controladores, sensores comerciales, precios regionales y un margen flexible se propone el siguiente presupuesto de   \$100.000
+
+\begin{comment}
 \newpage
 \section{Planificación y Gestión de Proyecto}
 
@@ -92,37 +106,17 @@ Prototipo final ensamblado, código fuente del microcontrolador, interfaz gráfi
 
     \item \textbf{Adquisiciones}: 
     \begin{itemize}
-        \item Sensor de potencia
+        \item Sensores
         \item Panel solar
-        \item Servo o motores paso a paso
-        \item Soporte pivote
-        \item Microcontrolador Atmega
-        \item ESP32 (transmisor de datos)
-        \item Foto diodos
-        \item RTC
+        \item Motores
+        \item Soporte 
+        \item Microcontrolador
+        \item Transmisor de datos
+        \item Sistema de Alimentación 
     \end{itemize}
 
-    \begin{table}[h!]
-        \centering
-        \begin{tabular}{|l|l|c|}
-            \hline
-            Concepto & Modelo & Costo Estimado \\ 
-            \hline
-            Sensor de potencia & INA219 & \$6.294 \\
-            Panel solar & Luxen LN10P & \$22.499 \\
-            Motor paso a paso & 28byj-48 & \$6.757 \\
-            Servo & SG 36 & \$4.699 \\
-            Soporte pivote & Impresión 3D & --- \\
-            Microcontrolador & Arduino UNO & \$10.500 \\
-            Sistema de comunicación & ESP32 & \$9.500 \\
-            Foto resistores & LD05 (x4) & \$5.700 \\
-            RTC & DS1302 & \$4.900 \\
-            Batería & --- & --- \\
-            \hline
-            \textbf{Total Estimado} & & \\
-            \hline
-        \end{tabular}
-    \end{table}
+    \item 
+    \textbf{Costos estimados :} En base al anterior listado se propone un presupuesto de   \$100.000
 \end{itemize}
-
+\end{comment}
 \end{document}
