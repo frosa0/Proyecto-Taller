@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.26)  2 APR 2025 20:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.26)  20 APR 2025 17:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"d:/ing/5 año/taller de sistemas digitales/Proyecto-Taller/Informe1/InformeLaboratorio1.tex"
-(d:/ing/5 año/taller de sistemas digitales/Proyecto-Taller/Informe1/InformeLaboratorio1.tex
+**"d:/ing/5 año/taller de sistemas digitales/Proyecto-Taller/Informe1/Acta de constitución de Proyecto.tex"
+(d:/ing/5 año/taller de sistemas digitales/Proyecto-Taller/Informe1/Acta de constitución de Proyecto.tex
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-12-25>
 (C:\Users\faust\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -174,27 +174,27 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count285
 \l__pdf_internal_box=\box52
-) (d:\ing\5 año\taller de sistemas digitales\Proyecto-Taller\Informe1\build\InformeLaboratorio1.aux)
-\openout1 = `InformeLaboratorio1.aux'.
+) (d:\ing\5 año\taller de sistemas digitales\Proyecto-Taller\Informe1\build\Acta de constitución de Proyecto.aux)
+\openout1 = `"Acta de constitución de Proyecto.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
  (C:\Users\faust\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count286
@@ -214,10 +214,9 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\faust\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 10.
- (d:\ing\5 año\taller de sistemas digitales\Proyecto-Taller\Informe1\build\InformeLaboratorio1.out) (d:\ing\5 año\taller de sistemas digitales\Proyecto-Taller\Informe1\build\InformeLaboratorio1.out)
+Package hyperref Info: Link coloring OFF on input line 11.
 \@outlinefile=\write3
-\openout3 = `InformeLaboratorio1.out'.
+\openout3 = `"Acta de constitución de Proyecto.out"'.
 
 
 *geometry* driver: auto-detecting
@@ -255,16 +254,32 @@ Package hyperref Info: Link coloring OFF on input line 10.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 23.
+(Font)              <14.4> on input line 24.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 23.
+(Font)              <7> on input line 24.
+
+LaTeX Warning: File `LOGOSFI-UNLP-color-01.png' not found on input line 34.
+
+
+d:/ing/5 año/taller de sistemas digitales/Proyecto-Taller/Informe1/Acta de constitución de Proyecto.tex:34: Package pdftex.def Error: File `LOGOSFI-UNLP-color-01.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.34 ...th=1\linewidth]{LOGOSFI-UNLP-color-01.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 
 
 [1
 
-{C:/Users/faust/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (d:\ing\5 año\taller de sistemas digitales\Proyecto-Taller\Informe1\build\InformeLaboratorio1.toc)
-\tf@toc=\write4
-\openout4 = `InformeLaboratorio1.toc'.
+{C:/Users/faust/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 75--77
+
+ []
 
 
 
@@ -272,46 +287,36 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.37 \newpage
-              [1]
+l.80 \end{document}
+                    [1]
 
-[2]
-<Gantt_2semana.png, id=30, 900.36375pt x 441.14813pt>
-File: Gantt_2semana.png Graphic file (type png)
-<use Gantt_2semana.png>
-Package pdftex.def Info: Gantt_2semana.png  used on input line 88.
-(pdftex.def)             Requested size: 537.75343pt x 263.49274pt.
-
-
-[3 <d:/ing/5 año/taller de sistemas digitales/Proyecto-Taller/Informe1/build/Gantt_2semana.png>]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 107.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 107.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 107.
-
-
-[4] (d:\ing\5 año\taller de sistemas digitales\Proyecto-Taller\Informe1\build\InformeLaboratorio1.aux)
+[2] (d:\ing\5 año\taller de sistemas digitales\Proyecto-Taller\Informe1\build\Acta de constitución de Proyecto.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-12-25>
  ***********
-Package rerunfilecheck Info: File `InformeLaboratorio1.out' has not changed.
-(rerunfilecheck)             Checksum: EE02D598823537F8A61B3E7C1B40401B;454.
+
+
+Package rerunfilecheck Warning: File `"Acta de constitución de Proyecto".out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `"Acta de constitución de Proyecto".out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  7299D17B34B95AAF071B462F1D77F11E;218.
  ) 
 Here is how much of TeX's memory you used:
- 9006 strings out of 473536
- 143118 string characters out of 5714956
- 545450 words of memory out of 5000000
+ 8989 strings out of 473536
+ 143224 string characters out of 5714956
+ 546373 words of memory out of 5000000
  32135 multiletter control sequences out of 15000+600000
- 564641 words of font info for 55 fonts, out of 8000000 for 9000
+ 562372 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,9n,79p,662b,567s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\faust\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/faust/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/faust/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/faust/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on "d:\ing\5 año\taller de sistemas digitales\Proyecto-Taller\Informe1\build\InformeLaboratorio1.pdf" (5 pages, 88250 bytes).
+ 75i,6n,79p,782b,447s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\faust\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/faust/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/faust/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/faust/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/faust/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on "d:\ing\5 año\taller de sistemas digitales\Proyecto-Taller\Informe1\build\Acta de constitución de Proyecto.pdf" (3 pages, 60240 bytes).
 PDF statistics:
- 65 PDF objects out of 1000 (max. 8388607)
- 9 named destinations out of 1000 (max. 500000)
- 22 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 45 PDF objects out of 1000 (max. 8388607)
+ 4 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

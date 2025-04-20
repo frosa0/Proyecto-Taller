@@ -1,0 +1,106 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{graphics}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{pdflscape}
+\usepackage{caption}
+
+\usepackage[spanish]{babel}
+\graphicspath{ {build/} } 
+\geometry{left=2cm, right=2cm, top=2cm, bottom=2cm}
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+        \vspace*{3cm}
+        
+        {\Huge \textbf{Laboratorio 1 - Grupo 7}}\\[1cm]
+        {\LARGE Panel solar automático:\\ [0.5cm]Planificación y Gestión del Proyecto}\\[2cm]
+        
+        \vfill
+        
+        {\Large \textbf{Integrantes}}\\[.5cm]
+        \large
+        \begin{tabular}{c c}
+            Gartner, Francisco Nehuen & 69864/6 \\
+            Marchesotti, Guido Daniel & 69923/9 \\
+            Rosa, Fausto Pablo & 69843/1 \\
+        \end{tabular}
+        
+        \vspace{1cm}
+        
+        \begin{figure}[b]
+            \centering
+            \includegraphics[width=1\linewidth]{LOGOSFI-UNLP-color-01.png}
+        \end{figure}
+        
+    \end{center}
+\end{titlepage}
+
+\newpage
+
+
+\section{Planificación y Gestión del Proyecto}
+
+Con el objetivo de desarrollar un sistema de seguimiento solar automático, se plantea una planificación estructurada pero flexible, basada en un enfoque de ciclo de vida híbrido. Esta metodología permitirá definir con claridad los objetivos desde el inicio, manteniendo a su vez la capacidad de adaptación frente a eventualidades que puedan surgir durante el desarrollo. Si bien se busca cumplir con un cronograma establecido, se contempla una cierta elasticidad en los plazos para acomodar ajustes o mejoras necesarias.\\
+
+El equipo de trabajo se organiza mediante un esquema rotativo de tareas, lo cual permite que todos los integrantes participen activamente en cada una de las etapas del proyecto. Esta dinámica favorece la adquisición de experiencia integral y fortalece el trabajo colaborativo, al mismo tiempo que permite repartir la carga laboral de manera equitativa. Cada miembro tiene la posibilidad de involucrarse tanto en el diseño como en la implementación y prueba del sistema.\\
+
+Durante la primera etapa se prevé realizar un relevamiento completo que incluirá la definición del propósito del sistema, la identificación de los materiales necesarios, la estimación preliminar de costos y la elaboración de un cronograma general. También se abordará la recopilación de información técnica y se procederá a una distribución inicial de tareas.\\
+
+A continuación, se trabajará en la elaboración esquemas y diagramas del sistema, abarcando tanto el diseño mecánico como el eléctrico. Esta instancia servirá como base para tomar decisiones informadas respecto a los componentes a adquirir. Entre los elementos previstos se encuentran sensores, un panel solar, motores para orientación, un microcontrolador, un sistema de transmisión de datos y una fuente de alimentación adecuada. Además, será necesario desarrollar un soporte estructural que asegure la estabilidad y movilidad del panel.\\
+
+Con un diseño preliminar finalizado, se avanzará en la adquisición de insumos y en el desarrollo inicial del software de control. Se buscará comenzar con pruebas tempranas del sistema que se llevarán a cabo a partir de maquetas y prototipos funcionales, que permitirán verificar el comportamiento del sistema en condiciones controladas.
+
+Una vez superada esta fase, se prevé ingresar en una etapa de pruebas alfa, donde se someterá al sistema a distintas condiciones de iluminación y orientación. Esta instancia será clave para ajustar parámetros, depurar el software y evaluar el desempeño general. Finalmente, se realizará la puesta a punto y las modificaciones necesarias antes de la entrega del proyecto terminado.\\
+
+El cronograma tentativo, ilustrado en la Figura \ref{cronograma}, distribuye las actividades a lo largo de varias semanas, permitiendo visualizar los tiempos asignados a cada fase y facilitar el seguimiento del avance.
+Como se observa en el grafico, se prevee que las etapas de planificacion inicial tardaran alrededor de 4 a 5 semanas, siendo estas junto con las de desarrollo de software las etapas mas extensas y de mayor importancia, fundamentales para el correcto desarrollo del proyecto. Las etapas de softawre y maquetas se llevaran a cabo en paralelo, perimitiendo flexibilidad en terminos de plazos de ejecucion.\\
+
+En cuanto al presupuesto, se ha estimado un costo total cercano a los \hyperref[tabla]{\$93.000} en función de los precios actuales de los componentes seleccionados. Este monto contempla tanto los elementos electrónicos como los materiales de construcción y montaje. Se procurará reutilizar componentes disponibles y optar por soluciones accesibles sin comprometer la funcionalidad del sistema.\\
+
+\begin{table}[h!]
+        \centering
+        \begin{tabular}{|l|c|}
+            \hline
+            Concepto  & Costo Estimado \\ 
+            \hline
+            Sensor de potencia & \$6.000 \\
+            Panel solar  & \$23.000 \\
+            Motor paso a paso  & \$7.000 \\
+            Servo & \$5.000 \\
+            Soporte pivote & \$6.000 \\
+            Microcontrolador  & \$10.000 \\
+            Sistema de comunicación  & \$10.000 \\
+            Foto resistores  & \$6.000 \\
+            RTC  & \$5.000 \\
+            Sistema de Alimentación  & \$15.000 \\
+            \hline
+            \textbf{Total Estimado} & \$93.000 \\
+            \hline
+        \end{tabular}
+        \captionof{figure}{Tabla con precios aproximados consultados al momento de realizar el informe }
+        \label{tabla}
+    \end{table}
+
+En resumen, el proyecto se gestiona bajo una lógica de planificación ordenada pero flexible, con una fuerte integración entre diseño, implementación y evaluación. El trabajo colaborativo, el compromiso del equipo y una adecuada previsión de recursos permitirán avanzar hacia una solución tecnológica eficiente y factible en los tiempos propuestos.\\
+
+
+
+
+\newpage
+\begin{landscape}
+    \thispagestyle{empty} % quita número de página si molesta
+    \begin{center}
+        \includegraphics[width=0.95\linewidth]{grantt-V2.png}
+        \captionof{figure}{Cronograma en semanas}
+        \label{cronograma}
+    \end{center}
+\end{landscape}
+
+
+
+\end{document}

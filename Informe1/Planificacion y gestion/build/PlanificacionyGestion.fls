@@ -1,7 +1,7 @@
-PWD d:\ing\5 año\taller de sistemas digitales\Proyecto-Taller\Informe1
+PWD d:\ing\5 año\taller de sistemas digitales\Proyecto-Taller\Informe1\Planificacion y gestion
 INPUT C:\Users\faust\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT d:\ing\5 año\taller de sistemas digitales\Proyecto-Taller\Informe1\InformeLaboratorio1.tex
-OUTPUT d:\ing\5 año\taller de sistemas digitales\Proyecto-Taller\Informe1\build\InformeLaboratorio1.log
+INPUT d:\ing\5 año\taller de sistemas digitales\Proyecto-Taller\Informe1\Planificacion y gestion\PlanificacionyGestion.tex
+OUTPUT d:\ing\5 año\taller de sistemas digitales\Proyecto-Taller\Informe1\Planificacion y gestion\build\PlanificacionyGestion.log
 INPUT C:\Users\faust\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\faust\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\faust\AppData\Local\Programs\MiKTeX\tex\latex\base\size12.clo
@@ -88,65 +88,3 @@ INPUT C:\Users\faust\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
 INPUT C:\Users\faust\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
 INPUT C:\Users\faust\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
 INPUT C:\Users\faust\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
-INPUT C:\Users\faust\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT C:\Users\faust\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT d:\ing\5 año\taller de sistemas digitales\Proyecto-Taller\Informe1\build\InformeLaboratorio1.aux
-INPUT d:\ing\5 año\taller de sistemas digitales\Proyecto-Taller\Informe1\build\InformeLaboratorio1.aux
-INPUT d:\ing\5 año\taller de sistemas digitales\Proyecto-Taller\Informe1\build\InformeLaboratorio1.aux
-OUTPUT d:\ing\5 año\taller de sistemas digitales\Proyecto-Taller\Informe1\build\InformeLaboratorio1.aux
-INPUT C:\Users\faust\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
-INPUT C:\Users\faust\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
-INPUT C:\Users\faust\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
-INPUT C:\Users\faust\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT C:\Users\faust\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT C:\Users\faust\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
-INPUT C:\Users\faust\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
-INPUT C:\Users\faust\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
-INPUT d:\ing\5 año\taller de sistemas digitales\Proyecto-Taller\Informe1\build\InformeLaboratorio1.out
-INPUT d:\ing\5 año\taller de sistemas digitales\Proyecto-Taller\Informe1\build\InformeLaboratorio1.out
-INPUT d:\ing\5 año\taller de sistemas digitales\Proyecto-Taller\Informe1\build\InformeLaboratorio1.out
-INPUT d:\ing\5 año\taller de sistemas digitales\Proyecto-Taller\Informe1\build\InformeLaboratorio1.out
-OUTPUT d:\ing\5 año\taller de sistemas digitales\Proyecto-Taller\Informe1\build\InformeLaboratorio1.pdf
-INPUT d:\ing\5 año\taller de sistemas digitales\Proyecto-Taller\Informe1\build\InformeLaboratorio1.out
-INPUT d:\ing\5 año\taller de sistemas digitales\Proyecto-Taller\Informe1\build\InformeLaboratorio1.out
-OUTPUT d:\ing\5 año\taller de sistemas digitales\Proyecto-Taller\Informe1\build\InformeLaboratorio1.out
-INPUT C:\Users\faust\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
-INPUT C:\Users\faust\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT C:\Users\faust\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
-INPUT C:\Users\faust\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
-INPUT C:\Users\faust\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT C:\Users\faust\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
-INPUT C:\Users\faust\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
-INPUT C:\Users\faust\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
-INPUT C:\Users\faust\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
-INPUT d:\ing\5 año\taller de sistemas digitales\Proyecto-Taller\Informe1\build\InformeLaboratorio1.toc
-INPUT d:\ing\5 año\taller de sistemas digitales\Proyecto-Taller\Informe1\build\InformeLaboratorio1.toc
-INPUT d:\ing\5 año\taller de sistemas digitales\Proyecto-Taller\Informe1\build\InformeLaboratorio1.toc
-INPUT C:\Users\faust\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-OUTPUT d:\ing\5 año\taller de sistemas digitales\Proyecto-Taller\Informe1\build\InformeLaboratorio1.toc
-INPUT C:\Users\faust\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm
-INPUT d:\ing\5 año\taller de sistemas digitales\Proyecto-Taller\Informe1\build\Gantt_2semana.png
-INPUT d:\ing\5 año\taller de sistemas digitales\Proyecto-Taller\Informe1\build\Gantt_2semana.png
-INPUT d:\ing\5 año\taller de sistemas digitales\Proyecto-Taller\Informe1\build\Gantt_2semana.png
-INPUT d:\ing\5 año\taller de sistemas digitales\Proyecto-Taller\Informe1\build\Gantt_2semana.png
-INPUT d:\ing\5 año\taller de sistemas digitales\Proyecto-Taller\Informe1\build\Gantt_2semana.png
-INPUT d:\ing\5 año\taller de sistemas digitales\Proyecto-Taller\Informe1\build\Gantt_2semana.png
-INPUT C:\Users\faust\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
-INPUT C:\Users\faust\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
-INPUT C:\Users\faust\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
-INPUT C:\Users\faust\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi8.tfm
-INPUT C:\Users\faust\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi6.tfm
-INPUT C:\Users\faust\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
-INPUT C:\Users\faust\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy8.tfm
-INPUT C:\Users\faust\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy6.tfm
-INPUT d:\ing\5 año\taller de sistemas digitales\Proyecto-Taller\Informe1\build\InformeLaboratorio1.aux
-INPUT d:\ing\5 año\taller de sistemas digitales\Proyecto-Taller\Informe1\build\InformeLaboratorio1.out
-INPUT d:\ing\5 año\taller de sistemas digitales\Proyecto-Taller\Informe1\build\InformeLaboratorio1.out
-INPUT C:\Users\faust\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
-INPUT C:\Users\faust\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
-INPUT C:\Users\faust\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
-INPUT C:\Users\faust\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
-INPUT C:\Users\faust\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
-INPUT C:\Users\faust\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
-INPUT C:\Users\faust\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr17.pfb
-INPUT C:\Users\faust\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr17.pfb
