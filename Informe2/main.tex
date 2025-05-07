@@ -6,6 +6,11 @@
 \usepackage{geometry}
 \usepackage{float}
 % \usepackage{comment}
+\usepackage{tabularx}
+\usepackage{booktabs}
+
+%\usepackage{indentfirst}
+
 \graphicspath{ {build/} } 
 \geometry{left=2cm, right=2cm, top=2cm, bottom=2cm}
 
@@ -43,8 +48,10 @@
 %%\tableofcontents
 %%\newpage
 
-A continuación se especificaran los posibles componentes a utilizar, así como las especificaciones y criterios tenidos en cuenta para elegirlos. \\
-Los componentes necesarios serán: 
+\section{Introducción}
+En esta entrega se presentan los componentes necesarios para el desarrollo del proyecto \textbf{Panel Solar Automático}. En este documento encontrará las funciones que cumplirán dichos componentes así como las las características y criterios tomados en cuenta para su elección.
+\section{Listado de componentes}
+Los componentes necesarios serán los siguientes: 
 \begin{itemize}
 \item Microcontrolador
 \item Sensor de Potencia
@@ -65,39 +72,107 @@ En \hyperref[fig:diagrama]{figura 1} se puede observar un diagrama de bloques co
     \label{fig:diagrama}
 \end{figure}
 
+\section{Análisis}
+A continuación, se desarrollan las criterios tenidos en cuenta para cada uno de los componentes listados, teniendo en cuenta su función y requerimientos necesarios. Cabe aclarar que en la selección de todos los componentes se tuvo en cuenta la disponibilidad y el precio siendo estas importantes limitaciones en el desarrollo del trabajo practico.
 
-Cabe aclarar que en la selección de todos los componentes se tuvo en cuenta la disponibilidad y el precio siendo estas importantes limitaciones en el desarrollo del trabajo practico
+\subsection{Microcontrolador}
+Dentro del proyecto tenemos limitaciones impuestas para la elección del microcontrolador. Aún así, se pueden nombrar algunas características destacables del mismo que se ajustan a las tareas a realizar. Como el sistema de seguimiento solar no requiere una acción de control rápida, la transmisión de datos no requiere de una velocidad elevada y los cálculos a realizar son de bajo consto computacional, se puede elegir un microcontrolador de características moderadas. Esto nos permitirá disminuir el consumo de energía alcanzando un mayor eficiencia energética, característica importante en sistemas  dependientes de baterías. Además, el Atmega328p es un microcontrolador popular con amplias librerías ya desarrolladas y funcionales, facilitando el desarrollo con el mismo y su debuggeo.\\
 
-Microcontrolador: 
-Dentro del proyecto tenemos limitaciones impuestas para la elección del microcontrolador. Aún así, se pueden nombrar algunas características destacables del mismo que se ajustan a las tareas a realizar. Como el sistema de seguimiento solar no requiere una acción de control rápida, la transmisión de datos no requiere de una velocidad elevada y los calculos a realizar son de bajo consto computacional, se puede elegir un microcontrolador de características moderadas. Esto nos permitirá disminuir el consumo de energía alcanzando un mayor eficiencia energética, característica importante en sistemas  dependientes de baterías. Además, el Atmega328p es un microcontrolador popular con amplias librerías ya desarrolladas y funcionales.\\
-
-Sensor de Potencia: 
-Considerando las características del panel solar, contando con una potencia máxima de 10 Watts, una corriente de de cortocircuito de 0.57A y un voltaje de circuito abierto de 23.5V se opta por componentes con un rango capaz de abarcar estos limites impuestos por el panel. Se tomaron en cuenta criterios como la sencillez de uso, al ser capaz de sensar múltiples variables con un único componente, la precisión y el consumo. A su vez, se pensó en la disponibilidad en el país y el costo. 
+\subsection{Sensor de Potencia}
+Considerando las características del panel solar, se filtrara al componente en función de que sea capaz de operar dentro del rango esperado de potencia, corriente y tensión que entregara el panel solar. Se priorizaran criterios como la sencillez de uso, optando por componentes capaces de sensar múltiples variables. Valorando también apartados como la precisión y el consumo.
 Debido a la lenta variación de la potencia, no se ha priorizado en la velocidad de muestreo a la hora de barajar entre los posibles componentes.\\ 
 
-INA 219\\
-Modulo Sensor Tension Corriente Max471 Para Arduino Emakers\\
-Sensor Corriente Shunt 3ch Ina3221 Smbus I2c Itytarg\\
-ac712\\
+%INA 219 1\%\\ 
+%Modulo Sensor Tension Corriente Max471 Para Arduino Emakers\\ 2\%
+%Sensor Corriente Shunt 3ch Ina3221 Smbus I2c Itytarg\\ 1\%
+%acs712\\
 
-Sensor de Luz:
+\begin{table}[h!]
+\centering
+\begin{tabularx}{\textwidth}{l c *{3}{>{\centering\arraybackslash}X}}
+\toprule
+\textbf{Criterio} & \textbf{Ponderación (\%)} & \textbf{INA 219} & \textbf{Max471} & \textbf{Ina3221} \\
+\midrule
+C1: Costo           & 40\% &  \$6200 (1)  &  \$9000(0)   &   \$16000 (-1)  \\
+C2: Disponibilidad & 30\% &  1    &  1   &  1   \\
+C3: Practicidad & 15\% & 1    &  0   &   1  \\
+%C4: Consumo   & 20\% &     &     &     \\
+C4: Precisión  & 15\% &  0   &  -1   &  1   \\
+\midrule
+\textbf{Total}           & 100\% &  3   &   0  &  2   \\
+\textbf{Total ponderado} &        &  85\%   &  15\%   & 20\%    \\
+\textbf{Prioridad}       &        &  1   &  3   &   2  \\
+\bottomrule
+\end{tabularx}
+\caption{Matriz de Pugh con ponderación por criterio}
+\end{table}
+
+
+%* practicidad: el Max471 no entrega valores de voltaje, solo de corriente. Habria que calcular el voltaje de otra manera, el resto devuelve ambos parametros. Capaz agregar algo de protocolos de comunicacion? \\
+
+%* Precision: INA 219: 1\%         Max471: 2\%        Ina3221: 0.5\%   
+
+\subsection{Sensor de Luz}
+
 Para el sensor de luz, que se utilizará para seleccionar la dirección del panel, se eligieron cuatro foto-resistores. Se eligió esta configuración donde se comparan los valores de los cuatro foto-resistores por ser usada en proyectos similares. \\
 
-Motores:
-Para la elección de los motores que moverán al panel en dirección acimutal y vertical (altura solar), se tomó en cuenta la potencia de los motores así como el torque necesario para ambas tareas. El primero será el de más uso, ya que el panel deberá rotar entre 120° y -120° por lo menos una vez al día, mientras que el segundo debe ser capaz de levantar el peso total del panel en dirección vertical. AGREGAR ESPECIFICACION PASO A PASO (PRECISIÓN) \\
+\subsection{Panel solar}
+\label{subsec:PanelSolar}
+El panel solar es pieza clave del proyecto y el que determinará la potencia máxima generable. Para su selección se tomó en cuenta la potencia máxima y qué reguladores de carga eran compatibles con el mismo, siendo esta una de las condiciones más limitantes. A su vez, las restricciones que mas acotan las opciones son el precio y las disponibilidad. Para cumplir con la condición no funcional de uso prolongado al aire libre, es ideal que el panel cumpla con la normativa de manufactura del tipo IEC 61215, donde establece los "requisitos para la cualificación del diseño de módulos fotovoltaicos para uso terrestre y adecuados para operación de larga duración en climas al aire libre".\\
+\begin{table}[h!]
+    \centering
+    \begin{tabularx}{\textwidth}{l c *{3}{>{\centering\arraybackslash}X}}
+    \toprule
+    \textbf{Criterio} & \textbf{Ponderación (\%)} & \textbf{Luxen 12v 10w} & \textbf{Luxen 12v 20w} & \textbf{Genérico 5v 0.5w} \\
+    \midrule
+    C1: Costo           & 30\% &  \$18000(1)  &  \$37000(-1)   &   \$7500 (1)  \\
+    C2: Disponibilidad & 30\% &  1    &  1   &  1   \\
+    C3: Potencia & 25\% & 1    &  1   &   -1  \\
+    C4: Resistencia a la intemperie  & 15\% &  1   &  1   &  -1  \\
+    \midrule
+    \textbf{Total}           & 100\% &  4   &   2  &  0   \\
+    \textbf{Total ponderado} &        &  100\%   &  40\%   & 20\%    \\
+    \textbf{Prioridad}       &        &  1   &  2   &   3  \\
+    \bottomrule
+    \end{tabularx}
+    \caption{Matriz de Pugh con ponderación por criterio}
+\end{table}
 
-Panel solar:
-El panel solar es pieza clave del proyecto y el que determinará la potencia máxima generable. Para su selección se tomó en cuenta la potencia máxima, su corriente de salida nominal, su tensión de salida nominal y qué reguladores de carga eran compatibles con el mismo, siendo esta una de las condiciones más limitantes. RESISTENCIA INTEMPERIE (CONDICIÓN NO FUNCIONAL), HUMO\\
 
-Panel Solar 10w 12v Luxen Policristalino Energia Solar\\
 
-Regulador de carga:
-Como se mencionó con anterioridad, el regulador de carga debió se elegido en conjunto con el panel solar teniendo en cuenta condiciones como la tensión de salida nominal del mismo. Pero fuera de las especificaciones técnicas, la característica de mayor relevancia es el costo. La tecnología del regulador de carga elegido es PWM, siendo esta una tecnología simple y barata que permite extraer energía del panel de manera efectiva a un relativo bajo costo. Esto comparado con otros sistemas que usan MPPT (maximum power point tracking) de mayor eficiencia en la extracción pero con un costo muy superior, inviable para proyectos a pequeña escala. PROTECCIONES DEL PANEL Y BATERÍA. TENSIÓN DE SALIDA (ALIMENTACIÓN DEL MICRO), SOLUCIONA CARGA TE BATERIA, [EXTRACCION DEL PANEL Y ALIMENTACIÓN DEL SISTEMA]\\
+\subsection{Motores}
+Para la elección de los motores que moverán al panel en dirección acimutal y vertical (altura solar), se tomó en cuenta la potencia de los motores así como el torque necesario para ambas tareas. El primero será el de más uso, ya que el panel deberá rotar entre 120° y -120° por lo menos una vez al día, mientras que el segundo debe ser capaz de levantar un peso mayor en dirección vertical, para este desarrollo se consideraron las dimensiones y pesos que correspondientes a la alternativa seleccionada en la \hyperref[subsec:PanelSolar]{seccion anterior}
+Para esta tarea se planea utilizar motores paso a paso por su funcionamiento preciso y por su alto par motor a bajas velocidades.
+Las opciones que consideramos que cumplen con las características planeteadas son los siguientes
 
-Batería:
+\begin{table}[h!]
+    \centering
+    \begin{tabularx}{\textwidth}{l c *{3}{>{\centering\arraybackslash}X}}
+    \toprule
+    \textbf{Criterio} & \textbf{Ponderación (\%)} & \textbf{Luxen 12v 10w} & \textbf{Luxen 12v 20w} & \textbf{Genérico 5v 0.5w} \\
+    \midrule
+    C1: Costo           & 30\% &  \$18000(1)  &  \$37000(-1)   &   \$7500 (1)  \\
+    C2: Disponibilidad & 30\% &  1    &  1   &  1   \\
+    C3: Potencia & 25\% & 1    &  1   &   -1  \\
+    C4: Resistencia a la intemperie  & 15\% &  1   &  1   &  -1  \\
+    \midrule
+    \textbf{Total}           & 100\% &  4   &   2  &  0   \\
+    \textbf{Total ponderado} &        &  100\%   &  40\%   & 20\%    \\
+    \textbf{Prioridad}       &        &  1   &  2   &   3  \\
+    \bottomrule
+    \end{tabularx}
+    \caption{Matriz de Pugh con ponderación por criterio}
+\end{table}
+
+\subsection{Regulador de carga}
+Como se mencionó con anterioridad, el regulador de carga debió se elegido en conjunto con el panel solar teniendo en cuenta condiciones como la tensión de salida nominal del mismo. Pero fuera de las especificaciones técnicas, la característica de mayor relevancia es el costo. La tecnología del regulador de carga elegido es PWM, siendo esta una tecnología simple y barata que permite extraer energía del panel de manera efectiva a un relativo bajo costo. Esto comparado con otros sistemas que usan MPPT (maximum power point tracking) de mayor eficiencia en la extracción pero con un costo muy superior, inviable para proyectos a pequeña escala. 
+
+PROTECCIONES DEL PANEL Y BATERÍA. TENSIÓN DE SALIDA (ALIMENTACIÓN DEL MICRO), SOLUCIONA CARGA TE BATERIA, [EXTRACCION DEL PANEL Y ALIMENTACIÓN DEL SISTEMA]\\
+
+\subsection{Batería}
 mAH QUE PUEDE ENTREGAR, VOLTAJE CONDICIONADO POR EL REGULADOR DE CARGA, 
 
-Transmisor inalámbrico:
+\subsection{Transmisor inalámbrico}
 La transmisión de datos en esta actividad no requiere se rápida, pero si eficiente. Al depender el sistema de la energía almacenada en las baterías, es necesario que el emisor pueda conectarse a la interfaz gráfica de manera inalámbrica sin comprometer la integridad de los datos, de manera eficiente y sin agotar la batería. Además, se planea que la distancia máxima a la que se deben trasmitir los datos almacenados no debe superar los 10 metros. ESPECIFICAR LOS TIPOS DE COMUNICACIÓN, I2C, \\
 HC-05 GW-040 \\
 
