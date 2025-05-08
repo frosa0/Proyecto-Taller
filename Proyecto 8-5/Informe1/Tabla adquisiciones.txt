@@ -1,0 +1,21 @@
+\begin{table}[h!]
+        \centering
+        \begin{tabular}{|l|l|c|}
+            \hline
+            Concepto & Modelo & Costo Estimado \\ 
+            \hline
+            Sensor de potencia & INA219 & \$6.294 \\
+            Panel solar & Luxen LN10P & \$22.499 \\
+            Motor paso a paso & 28byj-48 & \$6.757 \\
+            Servo & SG 36 & \$4.699 \\
+            Soporte pivote & Impresión 3D & --- \\
+            Microcontrolador & Arduino UNO & \$10.500 \\
+            Sistema de comunicación & ESP32 & \$9.500 \\
+            Foto resistores & LD05 (x4) & \$5.700 \\
+            RTC & DS1302 & \$4.900 \\
+            Sistema de Alimentación  & \hspace{1cm}--- & --- \\
+            \hline
+            \textbf{Total Estimado} & & \$70.849 \\
+            \hline
+        \end{tabular}
+    \end{table}
